@@ -8,13 +8,4 @@
   "updateRemoteUserUID": false,
 
   "onCreateCommand": "nix-shell --command 'echo done building nix dev environment'",
-
-  "customizations": {
-    "vscode": {
-      "extensions": [
-        "arrterian.nix-env-selector",
-        "jnoortheen.nix-ide"
-      ]
-    }
-  }
 }
