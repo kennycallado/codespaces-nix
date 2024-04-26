@@ -5,10 +5,5 @@ pkgs.mkShell {
     # needed by nix
     nixpkgs-fmt
     rnix-lsp
-
-    # needed by me
-    neovim
-    curl
-    git
   ];
 }
