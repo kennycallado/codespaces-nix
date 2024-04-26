@@ -8,6 +8,7 @@ pkgs.mkShell {
     rnix-lsp
 
     # development tools
+    ripgrep
     neovim
     curl
     git

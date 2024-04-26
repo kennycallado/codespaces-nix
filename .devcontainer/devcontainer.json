@@ -7,5 +7,9 @@
   "userEnvProbe": "loginShell",
   "updateRemoteUserUID": false,
 
-  "onCreateCommand": "nix-shell --command 'echo done building nix dev environment'"
+  "onCreateCommand": "nix-shell --command 'echo done building nix dev environment'",
+
+  "features": {
+    "ghcr.io/devcontainers/features/sshd:1": {}
+  }
 }
