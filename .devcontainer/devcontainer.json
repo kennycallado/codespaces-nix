@@ -8,8 +8,21 @@
   "updateRemoteUserUID": false,
 
   "onCreateCommand": "nix-shell --command 'echo done building nix dev environment'",
+  "postCreateCommand": ".devcontainer/post-create.sh",
 
   "features": {
     "ghcr.io/devcontainers/features/sshd:1": {}
+  },
+
+  "containerEnv": {
+    "PRELOAD_EXTENSIONS": "arrterian.nix-env-selector"
+  },
+
+  "customizations": {
+    "vscode": {
+      "extensions": [ 
+        "arrterian.nix-env-selector"
+      ]
+    }
   }
 }

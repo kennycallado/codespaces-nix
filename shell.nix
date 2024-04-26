@@ -1,5 +1,4 @@
 { pkgs ? import (fetchTarball "https://github.com/NixOS/nixpkgs/archive/nixos-23.05.tar.gz") { } }:
-# { pkgs ? import <nixpkgs> { } }:
 
 pkgs.mkShell {
   nativeBuildInputs = with pkgs; [
@@ -8,6 +7,7 @@ pkgs.mkShell {
     rnix-lsp
 
     # development tools
+    lunarvim
     ripgrep
     neovim
     curl
