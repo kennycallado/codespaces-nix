@@ -1,30 +1,11 @@
 {
   "name": "devcontainer-nix",
-  "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
-  "dockerFile": "Containerfile",
-  "context": "${localWorkspaceFolder}",
+  "workspaceFolder": "/workspace",
+  "dockerComposeFile": "compose.yml",
+  "service": "dev",
 
-
-  "runArgs": [
-    "--security-opt", "label=disable"
-  ],
-
-  "containerEnv": {
-    "PRELOAD_EXTENSIONS": "arrterian.nix-env-selector"
-  },
-
-  "overrideCommand": false,
   "userEnvProbe": "loginShell",
   "updateRemoteUserUID": false,
 
-  "onCreateCommand": "nix-shell --command 'echo done building nix dev environment'",
-
-  "customizations": {
-    "vscode": {
-      "extensions": [
-        "arrterian.nix-env-selector",
-        "jnoortheen.nix-ide"
-      ]
-    }
-  }
+  "onCreateCommand": "nix-shell --command 'echo done building nix dev environment'"
 }
