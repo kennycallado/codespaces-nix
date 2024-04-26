@@ -21,7 +21,8 @@
   "customizations": {
     "vscode": {
       "extensions": [ 
-        "arrterian.nix-env-selector"
+        "arrterian.nix-env-selector",
+        "jnoortheen.nix-ide"
       ]
     }
   }
