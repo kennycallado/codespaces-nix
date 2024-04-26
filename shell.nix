@@ -7,7 +7,7 @@ pkgs.mkShell {
     rnix-lsp
 
     # development tools
-    lunarvim
+    #lunarvim
     ripgrep
     neovim
     curl
