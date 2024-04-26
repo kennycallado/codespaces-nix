@@ -15,7 +15,6 @@
   },
 
   "containerEnv": {
-    "NIXPKGS_ALLOW_INSECURE": "1",
     "PRELOAD_EXTENSIONS": "arrterian.nix-env-selector"
   },
 
