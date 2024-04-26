@@ -11,6 +11,7 @@ pkgs.mkShell {
     lunarvim
     ripgrep
     neovim
+    make
     curl
     git
     gcc
